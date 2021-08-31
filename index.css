@@ -1,0 +1,27 @@
+nav ul{ /*para selecionar apenas um ul. also menu vertical*/ 
+    list-style: none;
+    margin: 0%; /*margin externa*/
+    padding: 0%;/*margin interna*/
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    /* width: 100px; but pixel não é ideal para medir*/
+}
+nav li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* display: inline; but versão horizontal do menu*/
+}
+nav li:hover{ /*hover == quando o mouse tá em cima*/
+    background-color: darkolivegreen;
+}
+nav.horizontal ul{ /*.horizontal puxa pela class, para poder usar o mesmo css em mais de uma pagina com estilos diferentes.*/
+ width: 100%;
+}
+nav.horizontal li{
+    display: inline;
+    padding: 10px;
+}
+label{
+    margin-top: 1px;
+    display: block;
+}
