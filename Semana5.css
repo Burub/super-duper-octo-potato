@@ -1,0 +1,42 @@
+body{
+    color: violet;
+    background-color: rgb(94, 25, 59);
+    border-style: solid;
+    border-width: 0.5em;
+}
+div{
+    background-color: rgb(94, 25, 59);
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+}
+div.other{
+    background-color: lightpink;
+}
+div:nth-child(3){ /*outra forma de selecionar dentro do elemento, sem usar class*/
+background-color: lightpink;
+}
+h2,h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24pt;
+    text-transform: capitalize; /*estilo do texto*/
+    text-align: center;
+    color: lightsalmon;
+    text-shadow: coral 2px -2px 5px; /*(posição, espessura? , blur)*/
+}
+p.largura-fixa{
+    font-family: 'Times New Roman', Times, serif;
+}
+span.destaque{
+    font-weight: 600;
+}
+span.italico{
+    font-style: italic;
+}
+p{
+    text-align: justify;
+}
+p.espacado{
+    letter-spacing: 0.2em;
+    line-height: 2em;
+}
