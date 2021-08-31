@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        img.telfone {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens no codigo</h1>
+    <img src="Memes/43 memes de animais para você ter na manga.jpg" alt="meme de gato" title="Meme de gato rabugento" width="100%">  <!--alt é texto alternativo para quem usa software de auxilio leitura.-->
+    <br> <!--break a.k.a quebra de linha-->
+    <img src="Memes/43 memes de animais para você ter na manga.jpg" alt="meme rabugento" title="outro exemplo de inline" class="telefone">
+    <h2> <code>Tag figure</code></h2>
+    <figure>
+        <img src="Memes/43 memes de animais para você ter na manga.jpg" alt="rabugento" title="gato">
+    <br>
+    <figcaption>legenda da figura.</figcaption>
+    </figure>
+    <h2>Tag Picture</h2>
+    <picture> <!--para caso esteja no celular-->
+        <source srcset="Memes/43 memes de animais para você ter na manga.jpg" media="(max.witdh: 480px)"> <!--para carregar o tamanho ideial a medida que reduz a tela-->
+        <img src="Memes/43 memes de animais para você ter na manga.jpg" alt="gato" title="rabugento">
+    </picture>
+    <h2>Audio e video</h2>
+    <audio src="eu não criei a pasta com audios de referencia" controls></audio>
+    <video src="eu não tenho aaa" controls></video>
+</body>
+</html>

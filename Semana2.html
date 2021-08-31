@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+    <link rel="stylesheet" href="index.css"> <!--Estilo do arquivo css-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        dt{
+            font-weight: bold; /* negrito */
+        }
+        dd{
+            font-style: italic; /* italico */
+        }
+        ul{
+            list-style-type: square;
+        }
+        ol{
+            list-style-type: upper-roman;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://google.com">Google</a> <!--ancchor-->
+    <a href="http://pt.wikipedia.org/wiki/World_Wide_Web" target="_blank">Wikipedia</a> <!--abrir em nova aba-->
+    <h2>Usando listas para fazer menu</h2>
+    <nav class="horizontal">
+        <ul>
+            <li>Home</li>
+            <li><a href="#glossario">Glossário</a></li> <!--movimentação na propria pagina-->
+            <li><a href="aulas/teste.html">Teste</a></li> <!--se estive-se em outra pasta-->
+            <li>DBO</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li> <br>Home</li>
+            <li><a href="../aulas/teste.html">Teste</a></li> <!--Se fosse de uma subpasta para fora se refere como ../-->
+            <li> <a href="Semana1.html">Semana 1</a></li> <!--Linkar dentro das proprias paginas-->
+        </ul>
+    </nav>
+    <h1>Semana 2</h1>
+    <p>Lista de livros</p> <!-- Existe ordenada(ol) e não odernada (ul)-->
+    <ul>
+        <!--List Item (li)-->
+        <li>Livros tecnicos <!--Lista dentro de lista. Lista aninhada.-->
+            <ul>
+                <li>Designing Data-Intensive Applications</li>
+                <li>Monolith to Microservices</li>
+            </ul>
+        </li>
+        <li>Cibercultura. Pierre Levy</li> <!-- li*3 add 3 li-->
+        <li>User Friendly. Cliff Kuang</li>
+        <li>Dez Argumentos Para Você Deletar Agora Suas Redes Sociais. Jason Lanier, Btuno Casotti</li>
+        <li>Historia da Computação. Wazlawick</li>
+    </ul>
+    <h2>Ordem de leitura</h2>
+    <ol> <!--ol>li*3 já deixa 3 li dentro-->
+        <li>Redes Sociais</li>
+        <li>User Friendly</li>
+        <li>Cibercultura</li>
+        <li>Historia</li>
+    </ol>
+    <!--#glossario é a id em css e html para referencia-->
+    <h2 id="glossario">Glossario</h2>
+    <dl> <!--Definition List (dl), Definition Term (dt), Definition Description(dd)-->
+        <dt>Upar</dt>
+        <dd>Carregar algo na internet</dd>
+        <dt>Zipar</dt>
+        <dd>Compactar um arquivo</dd>
+        <dt>Buildar</dt>
+        <dd>Executar um processo de construção de codigo</dd>
+    </dl>
+</body>
+</html>

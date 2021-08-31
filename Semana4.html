@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text"id="nome" name="nome">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+        <label for="endereco">Endereço*</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Exemplo de pré-texto"> <!--placeholder é vazio, apenas exemplo-->
+        <label for="profissão">Profissão</label>
+        <input type="text" name="profissao" id="profissao" value="estudante" disabled> <!--value já é preenchido e disable é bloquear alteração-->
+        <label for="instituto">Instituto</label>
+        <input type="text" name="instituto" id="instituto" value="IFRS" readonly>
+    </form>
+    <h2>new</h2>
+    <form>
+        <label for="data">Data</label>
+        <!--Data picker, time,week,month| | type tel || type email || type url || type checkbox-->
+        <input type="data" id="data" name="data">
+    </form>
+    <h2>New</h2>
+    <form>
+        <label for="aulas">Aulas</label>
+        <input type="range" min="1" max="5" name="aulas" id="aulas">
+    </form>
+    <h2>Color</h2>
+    <form>
+        <label for="cor">Cores</label>
+        <input type="color" value="#insira cor" name="cor" id="cor">
+    </form>
+    <h2>Outro</h2>
+    <form>
+        <fieldset> <!--conjunto de campos-->
+            <legend>Escolha musica</legend>
+            <label>
+                <input type="checkbox" name="kpop" id="kpop">
+                kpop
+            </label>
+            <label>
+                <input type="checkbox" name="pagode" id="pagode">
+                pagode
+            </label>
+            <label>
+                <input type="checkbox" name="rock" id="rock">
+                rock
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Oq significa HT em HTML?</legend>
+            <label>
+                <input type="radio" name="resposta" id="resposta" value="hyper">
+                hyper alguma coisa
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="cursos">Cursos</label>
+            <input type="text" name="cursos" id="cursos">
+            <datalist id="lista">
+                <option value="Info">Info</option>
+                <option value="Geo">Geo</option>
+                <option value="Auto">Auto</option>
+            </datalist>
+            <label for="ano">Ano</label>
+            <!--lista suspensa-->
+            <select name="ano" id="ano">
+                <option value="1º">1º</option>
+                <option value="1º">2º</option>
+                <option value="1º">3º</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
