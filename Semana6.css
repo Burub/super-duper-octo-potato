@@ -1,0 +1,28 @@
+body {
+    background-color: olivedrab;
+}
+p {
+    background-color: palegreen;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-color: seagreen;
+    border-width: 20px;
+    box-shadow: 2px 2px 5px
+}
+div {
+    font-size: 2em;
+    font-family: sans-serif;
+    background-color: tomato;
+    margin-bottom: 20px;
+    display: block;
+    position: static; /*rola com a pagina. Absolute tbm serve*/
+}
+div:hover {
+    background-color: darkred;
+    transition: background-color 1s;
+}
+section {
+    background-color: yellowgreen;
+}
